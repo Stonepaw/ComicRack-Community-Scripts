@@ -9,4 +9,5 @@
 	<div class="mt-2 text-sm text-base-content/70">
 		<span>by {plugin.author}</span>
 	</div>
+	<div class="mt-2 badge badge-primary">{plugin.category}</div>
 </section>
