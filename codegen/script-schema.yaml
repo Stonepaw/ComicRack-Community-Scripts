@@ -23,14 +23,18 @@ properties:
           type: string
         uniqueItems: true
   category:
-    type: array
     description: The categories the script belongs to
-    items:
-      type: string
-      enum:
-        - file management
-      description: The categories for this script
-    uniqueItems: true
+    oneOf:
+      - type: string
+        enum:
+          - file management
+      - type: array
+        items:
+          type: string
+          enum:
+            - file management
+          description: The categories for this script
+        uniqueItems: true
   description:
     type:
       - string
