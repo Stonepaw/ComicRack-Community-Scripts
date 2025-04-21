@@ -1,0 +1,15 @@
+name: Library Organizer
+author: Stonepaw
+added: 2025-04-19T00:00:00Z
+shortDescription: A rule and token based file organizer plugin for ComicRack
+description: Test
+category: file management
+links:
+  - name: Project
+    url: https://github.com/Stonepaw/comicrack-library-organizer
+  - name: Manual
+    url: https://drive.google.com/drive/folders/1Y91gwXzbARAXwnHNwJHUpwujf7R_DrXq?usp=sharing
+versions:
+  - version: 2.1.13
+    date: 2023-03-12T00:00:00Z
+    url: https://github.com/Stonepaw/comicrack-library-organizer/releases/tag/2.1.13
