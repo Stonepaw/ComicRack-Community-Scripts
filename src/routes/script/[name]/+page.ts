@@ -17,7 +17,7 @@ export const prerender = true;
  * scripts to be statically generated.
  */
 export const load: PageLoad = async ({ params }) => {
-	return await import(`$lib/generated/${params.name}.json`).then(
+	return await import(`$lib/generated/script/${params.name}.json`).then(
 		(m) => m.default as ComicRackScript
 	);
 };

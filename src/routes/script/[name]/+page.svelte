@@ -14,7 +14,7 @@
 	<title>ComicRack Community Scripts - {comicRackScript.name}</title>
 </svelte:head>
 
-<main class="min-h-screen bg-base-200 py-10">
+<div class="py-10">
 	<article class="card mx-auto max-w-screen-lg bg-base-100 p-12 shadow-sm">
 		<PluginHeader {comicRackScript} />
 
@@ -31,4 +31,4 @@
 			</div>
 		</div>
 	</article>
-</main>
+</div>
