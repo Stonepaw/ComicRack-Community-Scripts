@@ -3,3 +3,12 @@
 @plugin "daisyui" {
 	themes: corporate --default;
 }
+
+@layer base {
+	ol {
+		list-style: decimal inside;
+	}
+	ul {
+		list-style: disc inside;
+	}
+}

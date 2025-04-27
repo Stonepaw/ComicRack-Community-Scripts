@@ -1,3 +1,5 @@
+import DOMPurify from 'isomorphic-dompurify';
+import { marked } from 'marked';
 import type { ComicRackScript, ComicRackScriptVersion } from '../src/lib';
 import type { ComicRackScriptSchema, ComicRackScriptVersionSchema } from './script-schema';
 
@@ -21,9 +23,13 @@ function ensureArray<T>(value: T | T[]): T[] {
 function transformVersion(version: ComicRackScriptVersionSchema): ComicRackScriptVersion {
 	return {
 		...version,
-		changes: version.changes ?? undefined,
+		changes: version.changes != null ? convertMarkDown(version.changes) : undefined,
 		date: version.date ?? undefined
 	};
+}
+
+function convertMarkDown(value: string): string {
+	return DOMPurify.sanitize(marked.parse(value, { async: false }));
 }
 
 /**
@@ -45,7 +51,7 @@ export function normalizeSchemaScript(
 		author: ensureArray(data.author),
 		category: ensureArray(data.category),
 		links: data.links ?? [],
-		description: data.description ?? undefined,
+		description: data.description != null ? convertMarkDown(data.description) : undefined,
 		versions: data.versions.map(transformVersion)
 	};
 }

@@ -27,7 +27,9 @@
 					{/if}
 				</div>
 				{#if version.changes}
-					{version.changes}
+					<!-- We sanitize the markdown/html when generating the script data	-->
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+					{@html version.changes}
 				{/if}
 			</div>
 		{/each}
