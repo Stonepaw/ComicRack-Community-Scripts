@@ -1,12 +1,12 @@
 /**
  * The possible script categories
  */
-export type ScriptCategory = 'file management';
+export type ComicRackScriptCategory = 'file management';
 
 /**
  * A link for the script as additional details.
  */
-export interface ScriptLink {
+export interface ComicRackScriptLink {
 	/**
 	 * The display name of the link
 	 */
@@ -18,7 +18,7 @@ export interface ScriptLink {
 	url: string;
 }
 
-export interface ScriptVersion {
+export interface ComicRackScriptVersion {
 	/**
 	 * The changes to render in the change log.
 	 *
@@ -51,7 +51,7 @@ export interface ScriptVersion {
 	version?: string;
 }
 
-export interface Script {
+export interface ComicRackScript {
 	/**
 	 * A ISO-8601 formatted date time string of when the script was added to the database.
 	 */
@@ -65,7 +65,7 @@ export interface Script {
 	/**
 	 * The categories the the script belongs to
 	 */
-	category: ScriptCategory[];
+	category: ComicRackScriptCategory[];
 
 	/**
 	 * The long description of the script which is formatted html rendered from markdown.
@@ -84,7 +84,7 @@ export interface Script {
 	 *
 	 * This may simply be an empty array if there are no links.
 	 */
-	links: ScriptLink[];
+	links: ComicRackScriptLink[];
 
 	/**
 	 * The display name of the script
@@ -99,5 +99,5 @@ export interface Script {
 	/**
 	 * The versions for the scripts. Versions should be sorted from oldest to newest.
 	 */
-	versions: ScriptVersion[];
+	versions: ComicRackScriptVersion[];
 }

@@ -1,33 +1,33 @@
 <script lang="ts">
-	import type { Plugin } from './types';
 	import PluginHeader from './PluginHeader.svelte';
 	import PluginAbout from './PluginAbout.svelte';
 	import VersionHistory from './VersionHistory.svelte';
 	import SidebarInfo from './SidebarInfo.svelte';
+	import type { PageProps } from './$types';
 
-	let plugin: Plugin = {
-		name: 'ComicRack Library Organizer',
-		author: 'John Smith',
-		description:
-			'Automatically organize your comic library with smart folders and metadata-based rules',
-		version: '2.1.0',
-		category: 'File Management',
-		lastUpdated: '2024-02-15'
-	};
+	let props: PageProps = $props();
+
+	const comicRackScript = props.data;
 </script>
+
+<svelte:head>
+	<title>ComicRack Community Scripts - {comicRackScript.name}</title>
+</svelte:head>
 
 <main class="min-h-screen bg-base-200 py-10">
 	<article class="card mx-auto max-w-screen-lg bg-base-100 p-12 shadow-sm">
-		<PluginHeader {plugin} />
+		<PluginHeader {comicRackScript} />
 
-		<div class="mx-auto my-0 mb-12 flex max-w-[900px] gap-16">
-			<div class="max-w-[600px] flex-[2]">
-				<PluginAbout {plugin} />
-				<VersionHistory currentVersion={plugin.version} />
+		<div class="my-0 mb-12 grid grid-cols-5 gap-16">
+			<div class="col-span-3">
+				<PluginAbout {comicRackScript} />
+				<div class="mt-8">
+					<VersionHistory versions={comicRackScript.versions} />
+				</div>
 			</div>
 
-			<div class="max-w-[360px] flex-1">
-				<SidebarInfo {plugin} />
+			<div class="sticky top-10 col-span-2">
+				<SidebarInfo {comicRackScript} />
 			</div>
 		</div>
 	</article>
