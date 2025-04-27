@@ -1,5 +1,5 @@
-import type { ComicRackScript } from '../src/lib';
 import fs from 'node:fs';
+import type { ComicRackScript } from '../src/lib';
 
 /**
  * Writes the details of each script to a file in the "generated" directory.

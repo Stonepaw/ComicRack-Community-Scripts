@@ -1,5 +1,5 @@
 /**
- * The possible script categories
+ * The possible script categories.
  */
 export type ComicRackScriptCategory = 'file management';
 
@@ -8,12 +8,12 @@ export type ComicRackScriptCategory = 'file management';
  */
 export interface ComicRackScriptLink {
 	/**
-	 * The display name of the link
+	 * The display name of the link.
 	 */
 	name: string;
 
 	/**
-	 * The url to link to
+	 * The url to link to.
 	 */
 	url: string;
 }
@@ -23,13 +23,13 @@ export interface ComicRackScriptVersion {
 	 * The changes to render in the change log.
 	 *
 	 * This is formatted into sanitized html from the markdown yaml and can be omitted if no changes
-	 * should be listed
+	 * should be listed.
 	 */
 	changes?: string;
 
 	/**
-	 * The date the script version was released as an ISO-8601 formatted date string. Time may or
-	 * may not be included.
+	 * The date the script version was released as an ISO-8601 formatted date string. Time may or may
+	 * not be included.
 	 *
 	 * This may be nullable if the date is unknown. If not provided then it won't show up in the
 	 * recent changes section.
@@ -46,7 +46,7 @@ export interface ComicRackScriptVersion {
 	/**
 	 * The version number of the script.
 	 *
-	 * This may be optional if there isn't a named version
+	 * This may be optional if there isn't a named version.
 	 */
 	version?: string;
 }
@@ -63,7 +63,7 @@ export interface ComicRackScript {
 	author: string[];
 
 	/**
-	 * The categories the the script belongs to
+	 * The categories the the script belongs to.
 	 */
 	category: ComicRackScriptCategory[];
 
@@ -75,7 +75,7 @@ export interface ComicRackScript {
 	description?: string;
 
 	/**
-	 * The simple string id of the script parsed from the script name
+	 * The simple string id of the script parsed from the script name.
 	 */
 	id: string;
 
@@ -87,7 +87,7 @@ export interface ComicRackScript {
 	links: ComicRackScriptLink[];
 
 	/**
-	 * The display name of the script
+	 * The display name of the script.
 	 */
 	name: string;
 

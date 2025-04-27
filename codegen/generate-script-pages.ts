@@ -1,9 +1,9 @@
-import ts, { factory, NewLineKind } from 'typescript';
 import fs from 'node:fs';
+import ts, { factory, NewLineKind } from 'typescript';
 
 /**
- * Generates a simple typescript file containing an exported constant array of script names found
- * in the "scripts" directory.
+ * Generates a simple typescript file containing an exported constant array of script names found in
+ * the "scripts" directory.
  *
  * @param scriptSlugs The slugs of the scripts matching the exported details json file names.
  */

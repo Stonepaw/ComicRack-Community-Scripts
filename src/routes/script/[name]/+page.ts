@@ -1,6 +1,6 @@
-import type { EntryGenerator, PageLoad } from './$types';
 import { SCRIPT_SLUGS } from '$lib/generated/script-slugs';
 import type { ComicRackScript } from '$lib/script.type';
+import type { EntryGenerator, PageLoad } from './$types';
 
 /**
  * Generates a static but dynamically generated list of script slugs. This allows for a simple

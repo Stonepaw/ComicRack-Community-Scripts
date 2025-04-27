@@ -1,9 +1,9 @@
-import { ComicRackScriptSchema } from './script-schema';
-import { loadScripts } from './load-scripts';
-import { isValidScript } from './script-validator';
-import { generateScriptPages } from './generate-script-pages';
-import { normalizeSchemaScript } from './transform';
 import { generateDetails } from './generate-details';
+import { generateScriptPages } from './generate-script-pages';
+import { loadScripts } from './load-scripts';
+import type { ComicRackScriptSchema } from './script-schema';
+import { isValidScript } from './script-validator';
+import { normalizeSchemaScript } from './transform';
 
 async function main() {
 	const scripts: { fileName: string; data: ComicRackScriptSchema }[] = [];
