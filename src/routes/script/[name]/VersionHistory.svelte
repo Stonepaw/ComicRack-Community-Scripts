@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { ComicRackScriptVersion } from '$lib';
+	import LocalDate from '$lib/components/LocalDate.svelte';
 	let { versions }: { versions: ComicRackScriptVersion[] } = $props();
-	const formatter = Intl.DateTimeFormat(undefined, { dateStyle: 'long' });
 </script>
 
 <section>
@@ -14,7 +14,7 @@
 
 					{#if version.date}
 						<span class="text-sm text-base-content/60">
-							{formatter.format(new Date(version.date))}
+							<LocalDate date={version.date} />
 						</span>
 					{/if}
 

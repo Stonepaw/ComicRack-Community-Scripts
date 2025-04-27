@@ -1,11 +1,10 @@
 <script lang="ts">
 	import type { ComicRackScript } from '$lib';
+	import LocalDate from '$lib/components/LocalDate.svelte';
 
 	let { comicRackScript }: { comicRackScript: ComicRackScript } = $props();
 	let currentVersion = comicRackScript.versions[0];
 	let links = comicRackScript.links;
-
-	const formatter = Intl.DateTimeFormat(undefined, { dateStyle: 'long' });
 </script>
 
 <aside class="rounded-lg bg-base-200 p-8">
@@ -18,7 +17,7 @@
 	{#if currentVersion.date}
 		<div class="mt-3">
 			<div class="text-sm text-base-content/70">Last Updated</div>
-			<div>{formatter.format(new Date(currentVersion.date))}</div>
+			<div><LocalDate date={currentVersion.date} /></div>
 		</div>
 	{/if}
 
