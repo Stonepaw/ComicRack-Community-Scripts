@@ -5,6 +5,10 @@
 	let { children } = $props();
 </script>
 
-<Nav />
+<div class="min-h-screen bg-base-200">
+	<Nav />
 
-{@render children()}
+	<main>
+		{@render children()}
+	</main>
+</div>
