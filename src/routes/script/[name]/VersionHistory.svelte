@@ -6,9 +6,9 @@
 
 <section>
 	<h2 class="text-lg font-bold">Version History</h2>
-	<div class="mt-4 mb-8 rounded-lg border border-solid border-neutral-content">
+	<div class="mt-4 mb-8 rounded-lg border border-solid border-base-300">
 		{#each versions as version, index (index)}
-			<div class="border-b border-solid border-b-neutral-content p-4">
+			<div class="border-b border-solid border-b-base-300 p-4">
 				<div class="mb-1 flex items-center gap-2 text-sm font-semibold">
 					<span>Version {version.version ?? 'Lastest'}</span>
 
