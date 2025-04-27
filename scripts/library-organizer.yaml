@@ -2,7 +2,7 @@ name: Library Organizer
 author: Stonepaw
 added: 2025-04-19T00:00:00Z
 shortDescription: A rule and token based file organizer plugin for ComicRack
-description: Test
+description: A rule and token based file organizer plugin for ComicRack
 category: file management
 links:
   - name: Project
