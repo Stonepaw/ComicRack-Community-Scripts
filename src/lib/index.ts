@@ -4,4 +4,4 @@ export type {
 	ComicRackScriptCategory,
 	ComicRackScriptLink,
 	ComicRackScriptVersion
-} from './script.type';
+} from './comic-rack-script.type';

@@ -1,5 +1,5 @@
+import type { ComicRackScript } from '$lib/comic-rack-script.type';
 import { SCRIPT_SLUGS } from '$lib/generated/script-slugs';
-import type { ComicRackScript } from '$lib/script.type';
 import type { EntryGenerator, PageLoad } from './$types';
 
 /**
