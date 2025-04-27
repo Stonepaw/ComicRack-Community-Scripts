@@ -1,33 +1,33 @@
 import type { JSONSchemaType } from 'ajv';
 
-export type ScriptCategorySchema = 'file management';
+export type ComicRackScriptCategorySchema = 'file management';
 
 export type MaybeArray<T> = T | T[];
 
-export interface ScriptVersionSchema {
+export interface ComicRackScriptVersionSchema {
 	changes?: string | null;
 	date?: string | null;
 	url: string;
 	version: string;
 }
 
-export interface ScriptLinkSchema {
+export interface ComicRackScriptLinkSchema {
 	name: string;
 	url: string;
 }
 
-export interface ScriptSchema {
+export interface ComicRackScriptSchema {
 	added: string;
 	author: MaybeArray<string>;
-	category: MaybeArray<ScriptCategorySchema>;
+	category: MaybeArray<ComicRackScriptCategorySchema>;
 	description?: string | null;
-	links?: ScriptLinkSchema[] | null;
+	links?: ComicRackScriptLinkSchema[] | null;
 	name: string;
 	shortDescription: string;
-	versions: ScriptVersionSchema[];
+	versions: ComicRackScriptVersionSchema[];
 }
 
-export const SCRIPT_SCHEMA: JSONSchemaType<ScriptSchema> = {
+export const COMIC_RACK_SCRIPT_SCHEMA: JSONSchemaType<ComicRackScriptSchema> = {
 	$schema: 'http://json-schema.org/draft-07/schema#',
 	title: 'Script',
 	description: 'Represents a script with its metadata and versions',
@@ -120,7 +120,7 @@ export const SCRIPT_SCHEMA: JSONSchemaType<ScriptSchema> = {
 					changes: {
 						type: 'string',
 						description:
-							'The changes for this version in the change log and version history. This may be formatted markdown or a simple string and can be omitted for no changes.',
+							'The changes for this version in the change log and version history. This may be formatted markdown or a simple string and can be omitted for no displayed changes.',
 						nullable: true
 					},
 					date: {
@@ -132,8 +132,7 @@ export const SCRIPT_SCHEMA: JSONSchemaType<ScriptSchema> = {
 					},
 					url: {
 						type: 'string',
-						description:
-							'The download link for the script. This may be either an absolute link or a relative link for hosted scripts.',
+						description: 'The download link for the script.',
 						format: 'uri'
 					},
 					version: {

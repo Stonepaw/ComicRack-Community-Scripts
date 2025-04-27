@@ -1,6 +1,9 @@
-import type { ScriptSchema, ScriptVersionSchema } from './script-schema';
-import type { Script, ScriptVersion } from '../src/lib';
+import type { ComicRackScriptSchema, ComicRackScriptVersionSchema } from './script-schema';
+import type { ComicRackScript, ComicRackScriptVersion } from '../src/lib';
 
+/**
+ * Ensures that a value is an array if it is not already.
+ */
 function ensureArray<T>(value: T | T[]): T[] {
 	return Array.isArray(value) ? value : [value];
 }
@@ -8,10 +11,10 @@ function ensureArray<T>(value: T | T[]): T[] {
 /**Ò
  * Transforms a version object by ensuring specific properties are set to `undefined` if not present.
  *
- * @param {ScriptVersionSchema} version - The version object to transform, which may contain optional properties.
- * @return {ScriptVersion} A new version object with adjusted properties, ensuring `changes` and `date` are explicitly set to `undefined` if they are absent.
+ * @param {ComicRackScriptVersionSchema} version - The version object to transform, which may contain optional properties.
+ * @return {ComicRackScriptVersion} A new version object with adjusted properties, ensuring `changes` and `date` are explicitly set to `undefined` if they are absent.
  */
-function transformVersion(version: ScriptVersionSchema): ScriptVersion {
+function transformVersion(version: ComicRackScriptVersionSchema): ComicRackScriptVersion {
 	return {
 		...version,
 		changes: version.changes ?? undefined,
@@ -22,11 +25,14 @@ function transformVersion(version: ScriptVersionSchema): ScriptVersion {
 /**
  * Normalizes the given schema script data by transforming and ensuring specific fields.
  *
- * @param {ScriptSchema} data - The script schema data to normalize.
+ * @param {ComicRackScriptSchema} data - The script schema data to normalize.
  * @param {string} fileName - The file name associated with the script, used as its ID.
- * @return {Script} The normalized script object containing validated and transformed fields.
+ * @return {ComicRackScript} The normalized script object containing validated and transformed fields.
  */
-export function normalizeSchemaScript(data: ScriptSchema, fileName: string): Script {
+export function normalizeSchemaScript(
+	data: ComicRackScriptSchema,
+	fileName: string
+): ComicRackScript {
 	return {
 		...data,
 		id: fileName,

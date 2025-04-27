@@ -5,8 +5,7 @@ import fs from 'node:fs';
  * Generates a simple typescript file containing an exported constant array of script names found
  * in the "scripts" directory.
  *
- * @param scriptSlugs The slugs of the scripts in the form matching the exported details json file
- * names.
+ * @param scriptSlugs The slugs of the scripts matching the exported details json file names.
  */
 export async function generateScriptPages(scriptSlugs: string[]) {
 	const scriptNamesNode = factory.createVariableStatement(

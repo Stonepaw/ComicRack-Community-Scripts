@@ -1,4 +1,4 @@
-import { ScriptSchema } from './script-schema';
+import { ComicRackScriptSchema } from './script-schema';
 import { loadScripts } from './load-scripts';
 import { isValidScript } from './script-validator';
 import { generateScriptPages } from './generate-script-pages';
@@ -6,7 +6,7 @@ import { normalizeSchemaScript } from './transform';
 import { generateDetails } from './generate-details';
 
 async function main() {
-	const scripts: { fileName: string; data: ScriptSchema }[] = [];
+	const scripts: { fileName: string; data: ComicRackScriptSchema }[] = [];
 
 	for await (const { data, fileName } of loadScripts()) {
 		if (isValidScript(data)) {
