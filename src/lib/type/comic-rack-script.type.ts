@@ -1,7 +1,4 @@
-/**
- * The possible script categories.
- */
-export type ComicRackScriptCategory = 'file management';
+import type { ComicRackScriptCategory } from './comic-rack-script-category';
 
 /**
  * A link for the script as additional details.
@@ -100,4 +97,12 @@ export interface ComicRackScript {
 	 * The versions for the scripts. Versions should be sorted from oldest to newest.
 	 */
 	versions: ComicRackScriptVersion[];
+}
+
+export interface ComicRackScriptListItem
+	extends Pick<
+		ComicRackScript,
+		'added' | 'author' | 'shortDescription' | 'name' | 'id' | 'category'
+	> {
+	version: Pick<ComicRackScriptVersion, 'date' | 'version'>;
 }

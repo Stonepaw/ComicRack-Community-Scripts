@@ -1,6 +1,5 @@
 import type { JSONSchemaType } from 'ajv';
-
-export type ComicRackScriptCategorySchema = 'file management';
+import type { ComicRackScriptCategory } from '../src/lib';
 
 export type MaybeArray<T> = T | T[];
 
@@ -19,7 +18,7 @@ export interface ComicRackScriptLinkSchema {
 export interface ComicRackScriptSchema {
 	added: string;
 	author: MaybeArray<string>;
-	category: MaybeArray<ComicRackScriptCategorySchema>;
+	category: MaybeArray<ComicRackScriptCategory>;
 	description?: string | null;
 	links?: ComicRackScriptLinkSchema[] | null;
 	name: string;
@@ -61,13 +60,13 @@ export const COMIC_RACK_SCRIPT_SCHEMA: JSONSchemaType<ComicRackScriptSchema> = {
 			oneOf: [
 				{
 					type: 'string',
-					enum: ['file management']
+					enum: ['file-management']
 				},
 				{
 					type: 'array',
 					items: {
 						type: 'string',
-						enum: ['file management'],
+						enum: ['file-management'],
 						description: 'The categories for this script'
 					},
 					uniqueItems: true

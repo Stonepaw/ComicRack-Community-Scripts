@@ -1,7 +1,7 @@
 // place files you want to import through the `$lib` alias in this folder.
+export { ComicRackScriptCategory } from './type/comic-rack-script-category';
 export type {
 	ComicRackScript,
-	ComicRackScriptCategory,
 	ComicRackScriptLink,
 	ComicRackScriptVersion
-} from './comic-rack-script.type';
+} from './type/comic-rack-script.type';
