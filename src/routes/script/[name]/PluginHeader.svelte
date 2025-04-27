@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { ComicRackScript } from '$lib';
+	import { ComicRackScriptCategoryName } from '$lib/type/comic-rack-script-category';
 	let { comicRackScript }: { comicRackScript: ComicRackScript } = $props();
 </script>
 
@@ -11,7 +12,7 @@
 
 	<div class="mt-2 flex gap-2">
 		{#each comicRackScript.category as category (category)}
-			<div class="badge badge-primary">{category}</div>
+			<div class="badge badge-primary">{ComicRackScriptCategoryName[category]}</div>
 		{/each}
 	</div>
 </section>
