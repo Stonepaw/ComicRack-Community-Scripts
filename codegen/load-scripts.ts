@@ -1,8 +1,7 @@
 import yaml from 'js-yaml';
 import fs from 'node:fs';
 import path from 'node:path';
-
-const SCRIPTS_DIR = './scripts';
+import { SCRIPTS_DIR } from './paths';
 
 /**
  * Synchronously loads and parses YAML files from the "scripts" directory. This generator function
@@ -10,7 +9,7 @@ const SCRIPTS_DIR = './scripts';
  * parsed data.
  */
 export function* loadScripts(): Generator<{ fileName: string; data: unknown }, void, unknown> {
-	const files = fs.readdirSync(path.join(process.cwd(), SCRIPTS_DIR));
+	const files = fs.readdirSync(SCRIPTS_DIR);
 	const yamlFiles = files.filter((file) => file.endsWith('.yaml') || file.endsWith('.yml'));
 
 	for (const file of yamlFiles) {

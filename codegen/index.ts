@@ -1,3 +1,4 @@
+import { generateCategoryLists } from './generate-category-lists';
 import { generateDetails } from './generate-details';
 import { generateScriptPages } from './generate-script-pages';
 import { loadScripts } from './load-scripts';
@@ -22,7 +23,8 @@ async function main() {
 		normalizeSchemaScript(data, fileName)
 	);
 
-	await generateDetails(normalizedScripts);
+	generateDetails(normalizedScripts);
+	generateCategoryLists(normalizedScripts);
 }
 
 await main();

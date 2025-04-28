@@ -1,8 +1,9 @@
 import fs from 'node:fs';
 import ts, { factory, NewLineKind } from 'typescript';
+import { OUTPUT_DIR, SCRIPT_SLUGS_OUTPUT } from './paths';
 
 /**
- * Generates a simple typescript file containing an exported constant array of script names found in
+ * Generates a simple TypeScript file containing an exported constant array of script names found in
  * the "scripts" directory.
  *
  * @param scriptSlugs The slugs of the scripts matching the exported details json file names.
@@ -41,6 +42,6 @@ export async function generateScriptPages(scriptSlugs: string[]) {
 
 	const result = printer.printNode(ts.EmitHint.Unspecified, scriptNamesNode, source);
 
-	fs.mkdirSync('./src/lib/generated', { recursive: true });
-	fs.writeFileSync('./src/lib/generated/script-slugs.ts', result);
+	fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+	fs.writeFileSync(SCRIPT_SLUGS_OUTPUT, result);
 }

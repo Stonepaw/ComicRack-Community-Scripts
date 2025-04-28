@@ -76,7 +76,7 @@ export const COMIC_RACK_SCRIPT_SCHEMA: JSONSchemaType<ComicRackScriptSchema> = {
 		description: {
 			type: ['string'],
 			description:
-				'The long description of the script which can be either a simple string or complex markdown.',
+				'The long description of the script which can be either a simple string or complex markdown. When omitted, the shortDescription is displayed on the details page instead.',
 			nullable: true
 		},
 		links: {
