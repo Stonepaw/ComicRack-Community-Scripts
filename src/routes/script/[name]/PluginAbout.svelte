@@ -4,7 +4,11 @@
 </script>
 
 <section class="prose">
-	<!-- We sanitize the markdown/html when generating the script data	-->
-	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-	{@html comicRackScript.description}
+	{#if comicRackScript.description}
+		<!-- We sanitize the markdown/html when generating the script data	-->
+		<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+		{@html comicRackScript.description}
+	{:else}
+		{comicRackScript.shortDescription}
+	{/if}
 </section>
