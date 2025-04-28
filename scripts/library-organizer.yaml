@@ -13,3 +13,7 @@ versions:
   - version: 2.1.13
     date: 2023-03-12T00:00:00Z
     url: https://github.com/Stonepaw/comicrack-library-organizer/releases/tag/2.1.13
+    changes: |
+      Fixed:
+      - Copy day field when adding a copied book to the library
+      - Fixed issue when adding nested groups
