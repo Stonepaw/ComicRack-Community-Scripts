@@ -11,12 +11,12 @@
 	let { page, comicRackScripts }: Props = $props();
 </script>
 
-<div class="mx-auto max-w-screen-lg pt-16">
-	<div class="grid grid-cols-4">
+<div class="mx-auto max-w-screen-lg">
+	<div class="grid grid-cols-1 gap-y-4 sm:grid-cols-4">
 		<div>
 			<ScriptCategoryFilter {page} />
 		</div>
-		<div class="col-span-3">
+		<div class="sm:col-span-3">
 			<ScriptCardList {comicRackScripts} />
 		</div>
 	</div>

@@ -9,7 +9,7 @@
 	const { comicRackScripts }: Props = $props();
 </script>
 
-<div class="grid grid-cols-2 gap-6">
+<div class="grid gap-6 md:grid-cols-2">
 	{#each comicRackScripts as comicRackScript (comicRackScript.id)}
 		<ScriptCard {comicRackScript} />
 	{/each}

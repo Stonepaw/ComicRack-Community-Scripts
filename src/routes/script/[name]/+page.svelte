@@ -14,21 +14,22 @@
 	<title>ComicRack Community Scripts - {comicRackScript.name}</title>
 </svelte:head>
 
-<div class="py-10">
-	<article class="card mx-auto max-w-screen-lg bg-base-100 p-12 shadow-sm">
-		<PluginHeader {comicRackScript} />
-
-		<div class="my-0 mt-6 mb-12 grid grid-cols-5 gap-16">
-			<div class="col-span-3">
-				<PluginAbout {comicRackScript} />
-				<div class="mt-8">
-					<VersionHistory versions={comicRackScript.versions} />
-				</div>
-			</div>
-
-			<div class="sticky top-10 col-span-2 self-start">
-				<SidebarInfo {comicRackScript} />
-			</div>
+<article class="card-border card mx-auto max-w-screen-lg border-base-300 bg-base-100 shadow-sm">
+	<div class="card-body grid gap-x-16 gap-y-6 p-12 md:grid-cols-5">
+		<div class="md:col-span-3">
+			<PluginHeader {comicRackScript} />
 		</div>
-	</article>
-</div>
+
+		<div class="top-10 self-start md:sticky md:col-span-2 md:row-span-2">
+			<SidebarInfo {comicRackScript} />
+		</div>
+
+		<div class="md:col-span-3">
+			<PluginAbout {comicRackScript} />
+		</div>
+
+		<div class="md:col-span-3">
+			<VersionHistory versions={comicRackScript.versions} />
+		</div>
+	</div>
+</article>

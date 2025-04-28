@@ -11,7 +11,7 @@
 	let { page }: Props = $props();
 </script>
 
-<nav class="category-nav pr-8">
+<nav class="sm:pr-8">
 	<h4 class="mb-4 text-lg font-bold">Categories</h4>
 	<ul class="list-none">
 		<li>
