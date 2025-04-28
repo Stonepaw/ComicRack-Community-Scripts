@@ -1,5 +1,5 @@
 import type { JSONSchemaType } from 'ajv';
-import type { ComicRackScriptCategory } from '../src/lib';
+import { ComicRackScriptCategory } from '../src/lib';
 
 export type MaybeArray<T> = T | T[];
 
@@ -60,13 +60,13 @@ export const COMIC_RACK_SCRIPT_SCHEMA: JSONSchemaType<ComicRackScriptSchema> = {
 			oneOf: [
 				{
 					type: 'string',
-					enum: ['file-management']
+					enum: Object.values(ComicRackScriptCategory)
 				},
 				{
 					type: 'array',
 					items: {
 						type: 'string',
-						enum: ['file-management'],
+						enum: Object.values(ComicRackScriptCategory),
 						description: 'The categories for this script'
 					},
 					uniqueItems: true

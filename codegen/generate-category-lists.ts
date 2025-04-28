@@ -10,9 +10,14 @@ import { CATEGORIES_OUTPUT_DIR } from './paths';
 function groupScriptsByCategory(
 	scripts: ComicRackScript[]
 ): Record<ComicRackScriptCategory | 'all', ComicRackScriptListItem[]> {
-	const categories: Record<ComicRackScriptCategory, ComicRackScriptListItem[]> = {
-		'file-management': []
-	};
+	const categories: Record<ComicRackScriptCategory, ComicRackScriptListItem[]> = Object.fromEntries(
+		Object.values(ComicRackScriptCategory).map(
+			(category): [ComicRackScriptCategory, ComicRackScriptListItem[]] => {
+				return [category, []];
+			}
+		)
+	) as Record<ComicRackScriptCategory, ComicRackScriptListItem[]>;
+
 	const all: ComicRackScriptListItem[] = [];
 
 	for (const script of scripts) {

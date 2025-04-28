@@ -26,7 +26,7 @@
 				href="/">All</a
 			>
 		</li>
-		{#each Object.values(ComicRackScriptCategory) as category (category)}
+		{#each Object.values(ComicRackScriptCategory).sort() as category (category)}
 			<li>
 				<a
 					href="/scripts/{category}"
