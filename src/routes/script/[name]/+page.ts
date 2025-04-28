@@ -11,6 +11,7 @@ export const entries: EntryGenerator = () => {
 };
 
 export const prerender = true;
+export const csr = true;
 
 /**
  * Loads the generated details JSON as a pre page fetch. This allows a dynamic number of generated
