@@ -1,38 +1,51 @@
-# sv
+# ComicRack Community Scripts
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is a simple static site generator for the ComicRack Community scripts index.
 
-## Creating a project
+## Contributing
 
-If you're seeing this, you've probably already done this step. Congrats!
+The information for each script is located under [scripts](scripts) as a simple YAML file. These files
+are built into a website automatically.
+
+## Local Development
+
+The project uses svelte and a simple generator to construct the website.
+
+### 1. Install the version of node supported
+
+This is best done using [nvm](https://github.com/nvm-sh/nvm) on linux and OSX
+or [nvm-windows](https://github.com/coreybutler/nvm-windows).
+
+Once installed, run this to install the currently supported node version.
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+nvm use
 ```
 
-## Developing
+### 2. Install the dependencies
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```bash
+npm install
+```
+
+### 3. Run the project
+
+This will also generate the script data from the current YAML files.
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+### Useful commands
 
-To create a production version of your app:
+Regenerate the ComicRack script data for the pages.
 
 ```bash
-npm run build
+npm run codegen:scripts
 ```
 
-You can preview the production build with `npm run preview`.
+Validate that the script YAML matches the schema.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+npm run validate-scripts
+```
