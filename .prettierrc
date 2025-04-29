@@ -1,0 +1,28 @@
+{
+	"useTabs": true,
+	"singleQuote": true,
+	"trailingComma": "none",
+	"printWidth": 100,
+	"jsdocPrintWidth": 100,
+	"jsdocCapitalizeDescription": true,
+	"jsdocCommentLineStrategy": "multiline",
+	"jsdocSeparateReturnsFromParam": true,
+	"jsdocPreferCodeFences": true,
+	"jsdocSeparateTagGroups": true,
+	"jsdocDescriptionWithDot": true,
+	"plugins": [
+		"prettier-plugin-organize-imports",
+		"prettier-plugin-jsdoc",
+		"prettier-plugin-svelte",
+		"prettier-plugin-tailwindcss"
+	],
+	"overrides": [
+		{
+			"files": "*.svelte",
+			"options": {
+				"parser": "svelte"
+			}
+		}
+	],
+	"tailwindStylesheet": "./src/app.css"
+}
