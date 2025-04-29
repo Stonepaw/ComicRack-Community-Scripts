@@ -9,17 +9,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Read .nvmrc
-        run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
-        id: nvm
-
-      - name: Use Node.js ${{ steps.nvm.outputs.NODE_VERSION }}
-        uses: actions/setup-node@v2
+      - name: Setup
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
+          node-version-file: '.nvmrc'
           cache: npm
 
-      - name: Install dependencies
+      - name: Install
         run: npm install
 
       - name: Validate
