@@ -20,7 +20,7 @@
 			<PluginHeader {comicRackScript} />
 		</div>
 
-		<div class="top-10 self-start md:sticky md:col-span-2 md:row-span-2">
+		<div class="top-10 self-start md:sticky md:col-span-2 md:row-span-3">
 			<SidebarInfo {comicRackScript} />
 		</div>
 
