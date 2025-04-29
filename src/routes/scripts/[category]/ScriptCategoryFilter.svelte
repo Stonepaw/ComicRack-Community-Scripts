@@ -3,6 +3,7 @@
 		ComicRackScriptCategory,
 		ComicRackScriptCategoryName
 	} from '$lib/type/comic-rack-script-category';
+	import { base } from '$app/paths';
 
 	interface Props {
 		page: string;
@@ -23,13 +24,13 @@
 						'text-primary': page === 'all'
 					}
 				]}
-				href="/">All</a
+				href="{base}/">All</a
 			>
 		</li>
 		{#each Object.values(ComicRackScriptCategory).sort() as category (category)}
 			<li>
 				<a
-					href="/scripts/{category}"
+					href="{base}/scripts/{category}"
 					class={[
 						'mb-2 block rounded p-2',
 						{

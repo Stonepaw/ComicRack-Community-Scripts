@@ -7,10 +7,12 @@
 		comicRackScript: ComicRackScriptListItem;
 	}
 
+	import { base } from '$app/paths';
+
 	let { comicRackScript }: Props = $props();
 </script>
 
-<a href="/script/{comicRackScript.id}" class="card-border card border-base-300 bg-base-100">
+<a href="{base}/script/{comicRackScript.id}" class="card-border card border-base-300 bg-base-100">
 	<div class="card-body">
 		<h3 class="text-xl font-bold">{comicRackScript.name}</h3>
 		<div class="text-sm text-base-content/70">
