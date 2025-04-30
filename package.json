@@ -15,7 +15,8 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"validate:scripts": "tsx codegen/validate.ts",
-		"codegen:scripts": "tsx codegen"
+		"codegen:scripts": "tsx codegen",
+		"codegen:schema": "tsx codegen/generate-schema.ts"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",

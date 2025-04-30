@@ -3,6 +3,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { SCRIPTS_DIR } from './paths';
 
+const FILTERED_SCRIPTS = ['template.yaml', 'script-schema.yaml'];
+
 /**
  * Synchronously loads and parses YAML files from the "scripts" directory. This generator function
  * reads all files with extensions `.yaml` or `.yml`, parses their content, and yields each of the
@@ -10,7 +12,9 @@ import { SCRIPTS_DIR } from './paths';
  */
 export function* loadScripts(): Generator<{ fileName: string; data: unknown }, void, unknown> {
 	const files = fs.readdirSync(SCRIPTS_DIR);
-	const yamlFiles = files.filter((file) => file.endsWith('.yaml') || file.endsWith('.yml'));
+	const yamlFiles = files
+		.filter((file) => file.endsWith('.yaml') || file.endsWith('.yml'))
+		.filter((file) => !FILTERED_SCRIPTS.includes(file));
 
 	for (const file of yamlFiles) {
 		const content = fs.readFileSync(path.join(SCRIPTS_DIR, file), 'utf8');
