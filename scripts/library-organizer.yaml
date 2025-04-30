@@ -1,3 +1,4 @@
+$schema: './script-schema.yaml'
 name: Library Organizer
 author: Stonepaw
 added: 2025-04-19T00:00:00Z

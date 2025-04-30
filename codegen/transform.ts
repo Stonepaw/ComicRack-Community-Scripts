@@ -52,6 +52,8 @@ export function normalizeSchemaScript(
 		category: ensureArray(data.category),
 		links: data.links ?? [],
 		description: data.description != null ? convertMarkDown(data.description) : undefined,
-		versions: data.versions.map(transformVersion)
+		// In the YAML we store the versions in order of oldest to newest, but we display them newest
+		// to oldest, so we reverse the order here.
+		versions: data.versions.map(transformVersion).reverse()
 	};
 }
