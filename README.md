@@ -7,6 +7,9 @@ This is a simple static site generator for the ComicRack Community scripts index
 The information for each script is located under [scripts](scripts) as a simple YAML file. These files
 are built into a website automatically.
 
+A [template](scripts/template.yaml) for a script is available which can be copied to add a new script
+or referenced as needed.
+
 ## Local Development
 
 The project uses svelte and a simple generator to construct the website.
