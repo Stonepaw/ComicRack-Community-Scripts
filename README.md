@@ -47,5 +47,5 @@ npm run codegen:scripts
 Validate that the script YAML matches the schema.
 
 ```bash
-npm run validate-scripts
+npm run validate:scripts
 ```
