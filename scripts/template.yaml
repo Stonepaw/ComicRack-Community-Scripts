@@ -1,0 +1,100 @@
+# This is a template for a ComicRack script entry.
+#
+# Comments, optional field, or examples, are provided in lines starting with a #.
+# Examples can be uncommented as needed by removing the # character. Comments can remain or be deleted.
+#
+# Scripts can be validated by running `npm run validate:scripts`
+#
+# The file name of the script ends up being the path on the website for the details view. For example,
+# library-organizer.yaml would end up with the path `/script/library-organizer`
+
+# This defines the schema for the yaml file which IDEs can use to notify about missing fields.
+$schema: './script-schema.yaml'
+
+# The name is required and is displayed in the list view and the title of the details view.
+name: My Really Cool Script
+
+# The author may be a single name
+author: Stonepaw
+
+# Or a list of names
+#author:
+#  - Stonepaw
+#  - maforget
+
+# The added date is used to generate a page with recently added scripts. This should be a date-time string
+# in UTC in the ISO-8601 format.
+added: 2025-04-19T00:00:00Z
+
+# The short description is used on the list page or on the details page if no description is provided.
+# This supports a string only. No Markdown or HTML.
+shortDescription: A rule and token-based file organizer plugin for ComicRack
+
+# The description is used on the details page. This may be either a simple string or a string containing
+# Markdown and/or HTML. HTML code supports any CSS classes from tailwind or daisyUI
+# This is optional, and if omitted, the shortDescription is shown instead.
+#
+# A simple string example:
+#description: A rule and token-based file organizer plugin for ComicRack
+#
+# A more complex example. The | character allows multi-line string until the next field is specified.
+description: |
+  This is a really cool plugin. I can use <span class="font-bold text-primary">tailwind helper classes</span>.
+
+  # Or Markdown titles
+  ## With additional titles
+
+  Or lists
+  - such
+  - as 
+  - this one
+
+  Markdown links or regular links
+  [My cool link](https://github.com/maforget/ComicRackCE)
+  <a href="https://github.com/maforget/ComicRackCE" target="_blank">My cool link</a>
+
+  Or a DaisyUI button link.
+  <a class="btn btn-primary" href="https://github.com/maforget/ComicRackCE" target="_blank">Button Link!</a>
+
+  Images
+  ![alt text](https://picsum.photos/id/237/200/300 "Title")
+  <img src="https://picsum.photos/id/237/200/300" alt="alt text" />
+
+  Or even fancy column layouts
+  <div class="grid grid-cols-2 gap-4">
+    <div>Column 1</div>
+    <div>Column 2</div>
+  </div>
+
+# The category defines which lists the script belongs to.
+#
+# A single category can be provided
+category: file-management
+# Or multiple
+#category:
+#  - file-management
+#  - other
+
+# Additional links can be displayed on the details page. This is optional and can be omitted.
+# As many links as you want can be added.
+links:
+  - name: Project
+    url: https://github.com/Stonepaw/comicrack-library-organizer
+  - name: Manual
+    url: https://drive.google.com/drive/folders/1Y91gwXzbARAXwnHNwJHUpwujf7R_DrXq?usp=sharing
+
+# The versions of the script available. At least one version is required as it provides the download link.
+# Versions are listed in order from oldest to newest so that new updates are just added to the bottom of the file.
+versions:
+  # Only the url is required
+  - url: https://github.com/Stonepaw/comicrack-library-organizer/releases/tag/2.1.13
+  # But the version name, date released, and changes can also be provided
+  - version: 2.1.13
+    # The date is used to generate a page of recent updates. This must be an ISO-8601 date time string in utc.
+    date: 2023-03-12T00:00:00Z
+    url: https://github.com/Stonepaw/comicrack-library-organizer/releases/tag/2.1.13
+    # The changes field supports a simple string, Markdown, and/or HTML in the same way as the description field
+    changes: |
+      Fixed:
+      - Copy day field when adding a copied book to the library
+      - Fixed issue when adding nested groups
