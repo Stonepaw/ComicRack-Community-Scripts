@@ -8,9 +8,8 @@ import { SCRIPT_DETAILS_OUTPUT_DIR } from './paths';
 export function generateDetails(scripts: ComicRackScript[]) {
 	fs.mkdirSync(SCRIPT_DETAILS_OUTPUT_DIR, { recursive: true });
 	for (const script of scripts) {
-		fs.writeFileSync(
-			`${SCRIPT_DETAILS_OUTPUT_DIR}/${script.id}.json`,
-			JSON.stringify(script, null, '')
-		);
+		const path = `${SCRIPT_DETAILS_OUTPUT_DIR}/${script.id}.json`;
+		console.log(`Writing ${path}`);
+		fs.writeFileSync(path, JSON.stringify(script, null, ''));
 	}
 }
