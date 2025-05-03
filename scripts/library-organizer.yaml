@@ -6,7 +6,7 @@ shortDescription: A rule and token based file organizer plugin for ComicRack
 description: A rule and token based file organizer plugin for ComicRack
 category: file-management
 links:
-  - name: Project
+  - name: Github
     url: https://github.com/Stonepaw/comicrack-library-organizer
   - name: Manual
     url: https://drive.google.com/drive/folders/1Y91gwXzbARAXwnHNwJHUpwujf7R_DrXq?usp=sharing
