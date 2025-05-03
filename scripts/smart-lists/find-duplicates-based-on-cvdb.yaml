@@ -1,0 +1,10 @@
+$schema: ../script-schema.yaml
+added: '2025-05-03T21:47:40Z'
+author: Caliph
+category: smart-lists
+name: Find Duplicates Based on CVDB#
+shortDescription: List either comics missing ComicVine data or all of your duplicates.
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1V0oskgeOhloe4l8VQ3Ulm0-5dgtjqoD-/view?usp=drivesdk
+    version: '0.2'

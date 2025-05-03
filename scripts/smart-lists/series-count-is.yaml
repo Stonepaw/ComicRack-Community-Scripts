@@ -1,0 +1,10 @@
+$schema: ../script-schema.yaml
+added: '2025-05-03T21:47:40Z'
+author: Stonepaw
+category: smart-lists
+name: Series Count Is
+shortDescription: Filters eComics based on series count
+versions:
+  - url: >-
+      https://drive.google.com/file/d/0ByXjKzTdCC9nTFRfbjUxN2hRMTQ/view?usp=sharing&resourcekey=0-GUP0Wh12R8h8wIAFhTixYA
+    version: '1'

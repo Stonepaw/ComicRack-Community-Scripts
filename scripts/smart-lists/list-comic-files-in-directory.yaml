@@ -1,0 +1,14 @@
+$schema: ../script-schema.yaml
+added: '2025-05-03T21:47:40Z'
+author: oraclexview
+category: smart-lists
+name: List Comic Files in Directory
+shortDescription: >-
+  Runs outside of ComicRack. This script lists all the CRB and CBZ files located
+  in a user selected directory and all its sub-directories. There are two
+  version of this script: one exports the list to a txt file, the other exports
+  to an xls/xlsx file but requires Microsoft Excel.
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1CUtPLP6ZGD2L3MFOHOb5ZJ97g4R4KW9R/view?usp=drivesdk
+    version: '1'

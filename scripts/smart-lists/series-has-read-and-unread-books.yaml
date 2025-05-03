@@ -1,0 +1,12 @@
+$schema: ../script-schema.yaml
+added: '2025-05-03T21:47:40Z'
+author: Stonepaw
+category: smart-lists
+name: Series has read and unread books
+shortDescription: >-
+  A smartlist script that returns only series that have both read and unread
+  books.
+versions:
+  - url: >-
+      https://drive.google.com/file/d/0ByXjKzTdCC9ndWwyYWdBYWk2eEU/view?usp=sharing&resourcekey=0-VhkgStbtKTJ_LPecPcZW-Q
+    version: '1'

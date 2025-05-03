@@ -1,0 +1,10 @@
+$schema: ../script-schema.yaml
+added: '2025-05-03T21:47:40Z'
+author: Xelloss Nakama
+category: smart-lists
+name: Same X Different Y
+shortDescription: Find Comics with the same "X" value/s and different "Y" value/s
+versions:
+  - url: >-
+      https://drive.google.com/file/d/18-WDRUPhboZuFaW_9qydZqklDdAUL--u/view?usp=drivesdk
+    version: '0.6'

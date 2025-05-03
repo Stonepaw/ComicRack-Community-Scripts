@@ -1,0 +1,10 @@
+$schema: ../script-schema.yaml
+added: '2025-05-03T21:47:40Z'
+author: Stonepaw
+category: smart-lists
+name: Find missing issue gaps
+shortDescription: deprecated, functionality now built into ComicRack
+versions:
+  - url: >-
+      https://drive.google.com/file/d/0ByXjKzTdCC9nX2d5a2txR0ZVWjg/view?usp=sharing&resourcekey=0-RMBdiGWdMlnGzFQPVzfDDQ
+    version: '0.4'

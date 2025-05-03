@@ -1,0 +1,10 @@
+$schema: ../script-schema.yaml
+added: '2025-05-03T21:47:40Z'
+author: Xelloss Nakama
+category: smart-lists
+name: Find Volumes with different
+shortDescription: Find Volumes with comics that don't all have the same Format, Imprint, etc...
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1UDvEeEMbzJce-epk2yEZk3WvQAqtAXPa/view?usp=drivesdk
+    version: '0.1'

@@ -1,0 +1,13 @@
+$schema: ../script-schema.yaml
+added: '2025-05-03T21:47:40Z'
+author: pescuma
+category: smart-lists
+links:
+  - name: GitHub
+    url: https://github.com/pescuma/comicrack-plugins/tree/master/NextIssuesToRead
+name: Next issues to read
+shortDescription: List next books to read in series that you already started reading
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1KH7oh_WbYjTxH2KLzsbH9ZDFAL7zRU5d/view?usp=drive_link
+    version: '0.3'

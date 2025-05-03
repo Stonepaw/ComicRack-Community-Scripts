@@ -1,0 +1,10 @@
+$schema: ../script-schema.yaml
+added: '2025-05-03T21:47:40Z'
+author: wadegiles
+category: smart-lists
+name: Extract All Pages
+shortDescription: Extracts all the pages of an eComic to a user specified folder.
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1blTqVpLswhR5iV58xA-Yrmc-oVFrmPQM/view?usp=drivesdk
+    version: '1'

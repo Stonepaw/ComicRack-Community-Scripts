@@ -1,0 +1,10 @@
+$schema: ../script-schema.yaml
+added: '2025-05-03T21:47:40Z'
+author: Stonepaw
+category: smart-lists
+name: Smartlist Scripts
+shortDescription: FileIsMissing, GetNotesWithTags, NotesWithCVDB, Proposed Values
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1vO0Qce-fUFM2Asksx25jS_ODluv9LkOh/view?usp=sharing
+    version: '1'

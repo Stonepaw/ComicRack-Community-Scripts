@@ -1,0 +1,10 @@
+$schema: ../script-schema.yaml
+added: '2025-05-03T21:47:40Z'
+author: Stonepaw
+category: smart-lists
+name: Proposed Values
+shortDescription: Filters out any comics with proposed values.
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1O100eafb8jTeCU4avRHp_oI5kSwQFx9h/view?usp=drivesdk
+    version: '0.2'
