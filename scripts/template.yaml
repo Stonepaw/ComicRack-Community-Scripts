@@ -8,9 +8,6 @@
 # The file name of the script ends up being the path on the website for the details view. For example,
 # library-organizer.yaml would end up with the path `/script/library-organizer`
 
-# This defines the schema for the yaml file which IDEs can use to notify about missing fields.
-$schema: './script-schema.yaml'
-
 # The name is required and is displayed in the list view and the title of the details view.
 name: My Really Cool Script
 
