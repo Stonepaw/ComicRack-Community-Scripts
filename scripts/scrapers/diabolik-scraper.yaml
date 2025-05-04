@@ -1,0 +1,17 @@
+added: 2025-05-04T05:14:00Z
+author: Mizio66
+category: scrapers
+links:
+  - name: Diabolik.it
+    url: https://www.diabolik.it/
+  - name: GDrive Folder
+    url: https://drive.google.com/drive/u/1/folders/0Bzofljx4mD2xeVktS1lZT0NnMW8
+  - name: Manual
+    url: >-
+      https://drive.google.com/file/d/15L7j7EB2S00jIlrRw8Fn5E-tPN8NVTCU/view?usp=drive_link
+name: Diabolik Scraper
+shortDescription: Scrape data from Diabolik's site
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1gqOSaGU0P3yfNQ3VxibzlE_wp6ALmWQF/view?usp=drive_link
+    version: '1.9'

@@ -1,0 +1,15 @@
+added: 2025-05-04T05:14:00Z
+author: Mizio66
+category: scrapers
+links:
+  - name: Inducks
+    url: https://inducks.org/
+  - name: GDrive Folder
+    url: >-
+      https://drive.google.com/drive/folders/0Bzofljx4mD2xMXZEbmZTaUh4b2M?usp=sharing
+name: From Ducks
+shortDescription: Scrape data from COA InDucks (Disney database)
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1cssmPidCWZUcAaYcFTI9mKpaozu9hpbA/view?usp=sharing
+    version: '2.14'
