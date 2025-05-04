@@ -1,0 +1,9 @@
+added: 2025-05-04T23:10:23Z
+author: perezmu
+category: metadata
+name: More Scan Information from Filename
+shortDescription: >-
+  Imports various information from the filename. Information such as number of
+  pages, scan features, number of covers and comic format.
+versions:
+  - version: 0.1 (missing)

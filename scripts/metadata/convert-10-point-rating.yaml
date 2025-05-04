@@ -1,0 +1,11 @@
+added: 2025-05-04T23:10:23Z
+author: Stonepaw
+category: metadata
+name: Convert 10-Point Rating
+shortDescription: >-
+  Converts a 10-point rating system into a 5-point and puts the result into one
+  of the rating fields.
+versions:
+  - url: >-
+      https://drive.google.com/file/d/0ByXjKzTdCC9nWE96Um8zcjJLSVE/view?usp=sharing&resourcekey=0-ax-ph8aur05EgQo4fUn6fA
+    version: '1'

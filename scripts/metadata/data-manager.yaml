@@ -1,0 +1,14 @@
+added: 2025-05-04T23:10:23Z
+author:
+  - docDoom
+  - modded by T3KNOGHO57
+  - fixes by maforget
+category: metadata
+links:
+  - name: GitHub
+    url: https://github.com/maforget/crdatamanager
+name: Data Manager
+shortDescription: manages data in your ComicRack library
+versions:
+  - url: https://github.com/maforget/CRDataManager/releases/tag/2.07.04.822
+    version: 2.07.04r822

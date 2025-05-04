@@ -1,0 +1,14 @@
+added: 2025-05-04T23:10:23Z
+author: Stonepaw
+category: metadata
+links:
+  - name: GDrive
+    url: https://drive.google.com/drive/folders/1mz_GLieZxKVAD8tC96fYkZhVLBvdPLdv
+name: Pull List
+shortDescription: >-
+  Adds Pull-list to the tags of every book in a list of series. Includes scripts
+  to add and manage the list of series.
+versions:
+  - url: >-
+      https://drive.google.com/file/d/0ByXjKzTdCC9nQWFkM0ljZEFXYlk/view?usp=sharing&resourcekey=0-azwP6nf6cPS80Qi4MtTahQ
+    version: '1.1'
