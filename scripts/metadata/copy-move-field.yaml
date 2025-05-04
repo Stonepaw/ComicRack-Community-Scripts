@@ -1,0 +1,16 @@
+added: 2025-05-04T23:10:23Z
+author:
+  - Stonepaw
+  - Icon by 600WPMPO
+  - updated by maforget
+category: metadata
+links:
+  - name: GitHub
+    url: https://github.com/maforget/comicrack-copy-move-field
+name: Copy-Move Field
+shortDescription: >-
+  Moves or copies info from one field to another. Can either replace or append
+  to the destination field.
+versions:
+  - url: https://github.com/maforget/comicrack-copy-move-field/releases/tag/1.5
+    version: '1.5'

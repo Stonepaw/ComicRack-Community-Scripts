@@ -6,8 +6,8 @@ export type MaybeArray<T> = T | T[];
 export interface ComicRackScriptVersionSchema {
 	changes?: string | null;
 	date?: string | null;
-	url: string;
-	version: string;
+	url?: string;
+	version?: string;
 }
 
 export interface ComicRackScriptLinkSchema {
@@ -114,7 +114,6 @@ export const COMIC_RACK_SCRIPT_SCHEMA: JSONSchemaType<ComicRackScriptSchema> = {
 			description: 'The versions for the scripts. Versions should be sorted from oldest to newest.',
 			items: {
 				type: 'object',
-				required: ['url'],
 				properties: {
 					changes: {
 						type: 'string',
@@ -132,12 +131,14 @@ export const COMIC_RACK_SCRIPT_SCHEMA: JSONSchemaType<ComicRackScriptSchema> = {
 					url: {
 						type: 'string',
 						description: 'The download link for the script.',
-						format: 'uri'
+						format: 'uri',
+						nullable: true
 					},
 					version: {
 						type: ['string'],
 						description:
-							"The version number of the script. This may be optional if there isn't a named version"
+							"The version number of the script. This may be optional if there isn't a named version",
+						nullable: true
 					}
 				}
 			}

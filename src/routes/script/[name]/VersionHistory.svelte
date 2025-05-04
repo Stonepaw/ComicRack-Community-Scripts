@@ -20,7 +20,7 @@
 
 					{#if index === 0}
 						<div class="ml-auto badge badge-success">Latest</div>
-					{:else}
+					{:else if version.url}
 						<a href={version.url} class="ml-auto link link-primary link-hover" target="_blank">
 							Download
 						</a>

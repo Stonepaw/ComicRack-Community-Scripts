@@ -1,0 +1,13 @@
+added: 2025-05-04T23:10:23Z
+author: Xelloss Nakama
+category: metadata
+name: Autocomplete Volume Values
+shortDescription: >-
+  This script will try to complete Format, Imprint, Series Group and Count (when
+  empty) in each of your comics by copying information from other comics in your
+  library that seem to be in the same volume and have this information
+  completed before
+versions:
+  - url: >-
+      https://drive.google.com/file/d/12Vy3T2Sx8UQZhyOMgaUe3yZVCYUBUDFz/view?usp=drivesdk
+    version: '1.3'

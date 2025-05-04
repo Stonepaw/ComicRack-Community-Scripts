@@ -1,0 +1,13 @@
+added: 2025-05-04T23:10:23Z
+author:
+  - Stonepaw
+  - Modder=600WPMPO
+category: metadata
+name: Reading Club
+shortDescription: >-
+  Adds Reading Club to the tags either every or certain issues in a list of
+  series. Includes scripts to add and manage the list of series.
+versions:
+  - url: >-
+      https://drive.google.com/file/d/0ByXjKzTdCC9neUZsQmxLNlZlcmM/view?usp=sharing&resourcekey=0-iFzHD--uRBujjVkOd9vwUA
+    version: '1.1'

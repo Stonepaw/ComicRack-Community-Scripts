@@ -1,0 +1,9 @@
+added: 2025-05-04T23:10:23Z
+author: Xelloss Nakama
+category: metadata
+name: Store Plus
+shortDescription: Saves and Loads data in Comics that is not stored in the files by default
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1lRlEWVdqfDc-Ml7PwcAJ0UldKbrBuawv/view?usp=drivesdk
+    version: '0.1'

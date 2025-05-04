@@ -1,0 +1,17 @@
+added: 2025-05-04T23:10:23Z
+author:
+  - perezmu
+  - oraclexview
+category: metadata
+links:
+  - name: GDrive
+    url: https://drive.google.com/drive/folders/12BtFpXdGwg9xmqFlIg2I6f2Ysb6SGAhZ
+name: Comic Tags Toolbox
+shortDescription: >-
+  Various utilities for managing tags and notes: ClearNotes, ClearTags,
+  RetrieveTagsFromNotes, SaveTagstoNotes, ScannerTagsFromName, ScanTypeFromName,
+  SyncTagsAndNotes
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1GDd-F144OZvDlPmfoEeuCs4_iaqt0iMj/view?usp=drivesdk
+    version: 0.4.1

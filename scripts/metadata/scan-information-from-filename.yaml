@@ -1,0 +1,18 @@
+added: 2025-05-04T23:10:23Z
+author:
+  - Perezmu
+  - Stonepaw
+  - 600WPMPO
+  - Helmic
+category: metadata
+links:
+  - name: GitHub
+    url: https://github.com/Stonepaw/comicrack-scan-information-from-filename
+name: Scan Information From Filename
+shortDescription: >-
+  A script to add the scanner information from the file name to the Scan
+  Information field.
+versions:
+  - url: >-
+      https://github.com/Stonepaw/comicrack-scan-information-from-filename/releases/tag/v0.7
+    version: '0.7'

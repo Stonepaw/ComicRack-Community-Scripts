@@ -1,0 +1,12 @@
+added: 2025-05-04T23:10:23Z
+author: tcm1998
+category: metadata
+name: Priat
+shortDescription: >-
+  Path Reader and InterActive Tagger. Imports tags from the file name using
+  regular expression. Includes a comprehensive preview to easily tweak the
+  regex and see what will be imported.
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1QRpF41W03HfE62TH4QlF1n2Sn6e4TBxB/view?usp=drivesdk
+    version: 0.0.9.1

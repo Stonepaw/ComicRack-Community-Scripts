@@ -1,0 +1,10 @@
+added: 2025-05-04T23:10:23Z
+category: metadata
+author: maforget
+links:
+  - name: GitHub
+    url: https://gist.github.com/maforget/99b7fa402e36f3d7733c5ef853f29b5e
+name: Export Book List Full
+shortDescription: ComicRack Script to export all fields to a CSV file
+versions:
+  - version: N/A

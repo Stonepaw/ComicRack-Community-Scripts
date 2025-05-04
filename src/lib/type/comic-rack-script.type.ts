@@ -38,7 +38,7 @@ export interface ComicRackScriptVersion {
 	 *
 	 * This may be either an absolute link or a relative link for hosted scripts.
 	 */
-	url: string;
+	url?: string;
 
 	/**
 	 * The version number of the script.
