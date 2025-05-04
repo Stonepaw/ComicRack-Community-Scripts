@@ -1,0 +1,12 @@
+added: 2025-05-04T05:14:00Z
+author: maforget
+category: scrapers
+links:
+  - name: Github
+    url: https://github.com/maforget/ComicRack_AmazonScrapper
+name: Amazon Scraper
+shortDescription: Scrapes from amazon, formally Comixlogy
+versions:
+  - url: >-
+      https://github.com/maforget/ComicRack_AmazonScrapper/releases/download/nightly/AmazonScrapper.crplugin
+    version: Nightly

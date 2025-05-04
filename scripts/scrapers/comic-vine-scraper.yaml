@@ -1,0 +1,16 @@
+added: 2025-05-04T05:14:00Z
+author: cbanack
+category: scrapers
+links:
+  - name: ComicVine
+    url: https://comicvine.gamespot.com/
+  - name: GitHub
+    url: https://github.com/cbanack/comic-vine-scraper
+  - name: ComicRack Manual
+    url: https://drive.google.com/open?id=13VDrSKDXrSqsbXISzAXx6mNjpxJatagY
+name: Comic Vine Scraper
+shortDescription: Scrapes data from the extensive ComicVine database
+versions:
+  - url: https://bit.ly/cvs10102
+    version: 1.0.102
+    date: 2024-03-02T04:40:00Z

@@ -1,0 +1,18 @@
+added: 2025-05-04T05:14:00Z
+author: Mizio66
+category: scrapers
+links:
+  - name: Sergio Bonelli
+    url: https://www.sergiobonelli.it/
+  - name: GDrive Folder
+    url: >-
+      https://drive.google.com/drive/folders/0Bzofljx4mD2xTnZ4NElpc0d4NGs?usp=sharing
+  - name: Manual
+    url: >-
+      https://drive.google.com/file/d/0Bzofljx4mD2xLWFIVm51MmR2dXM/view?usp=sharing
+name: Bonelli
+shortDescription: Scrape data from Bonelli's site
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1GxzNZKAEPl411t1dcEGIHE_2IlXOFuYs/view?usp=sharing
+    version: 4.0b

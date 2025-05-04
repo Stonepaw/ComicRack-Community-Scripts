@@ -1,0 +1,9 @@
+added: 2025-05-04T05:14:00Z
+author: Mizio66
+category: scrapers
+name: ScrapeTxt
+shortDescription: Scrape data from text files, for Comicrack (c)
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1Sp-ilbFzwSBSw5-Kmrgveu-E5IRE4r7_/view?usp=drivesdk
+    version: '1.6'

@@ -1,0 +1,17 @@
+added: 2025-05-04T05:14:00Z
+author:
+  - Franck
+  - revised by Mizio66
+  - updated by maforget
+category: scrapers
+links:
+  - name: Bedetheque
+    url: https://bedetheque.com/
+  - name: GitHub
+    url: https://github.com/maforget/Bedetheque-Scrapper-2
+name: Bedetheque Scraper 2
+shortDescription: Scrape data from Bedetheque.com for French BD
+versions:
+  - url: https://github.com/maforget/Bedetheque-Scrapper-2/releases/latest
+    version: v6.0
+    date: 2025-01-02T20:35:00Z
