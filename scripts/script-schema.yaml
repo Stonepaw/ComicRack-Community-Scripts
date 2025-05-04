@@ -89,8 +89,6 @@ properties:
       newest.
     items:
       type: object
-      required:
-        - url
       properties:
         changes:
           type: string
@@ -114,9 +112,12 @@ properties:
           type: string
           description: The download link for the script.
           format: uri
+          nullable: true
         version:
           type:
             - string
+            - 'null'
           description: >-
             The version number of the script. This may be optional if there
             isn't a named version
+          nullable: true

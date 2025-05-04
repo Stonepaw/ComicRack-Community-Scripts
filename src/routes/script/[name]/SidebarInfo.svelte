@@ -8,7 +8,9 @@
 </script>
 
 <aside class="rounded-lg bg-base-200 p-8">
-	<a class="btn w-full btn-primary" target="_blank" href={currentVersion.url}>Download</a>
+	{#if currentVersion.url}
+		<a class="btn w-full btn-primary" target="_blank" href={currentVersion.url}>Download</a>
+	{/if}
 	<div class="mt-6">
 		<div class="text-sm text-base-content/70">Current Version</div>
 		<div>{currentVersion.version ?? 'Latest'}</div>
