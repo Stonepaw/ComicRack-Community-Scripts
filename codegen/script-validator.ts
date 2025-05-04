@@ -2,7 +2,9 @@ import { Ajv } from 'ajv';
 import ajvFormats from 'ajv-formats';
 import { COMIC_RACK_SCRIPT_SCHEMA } from './script-schema';
 
-const ajv = new Ajv();
+const ajv = new Ajv({
+	allErrors: true
+});
 ajvFormats(ajv);
 
 /**

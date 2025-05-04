@@ -1,0 +1,12 @@
+added: 2025-05-03T22:37:01Z
+author: pescuma
+category: smart-lists
+links:
+  - name: GitHub
+    url: https://github.com/pescuma/comicrack-plugins/tree/master/FilesNotFound
+name: Files not Found
+shortDescription: List books that the file is not found (or found) on the disc (ignore fileless)
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1LJapqY3vLfFcLiUwi1Ebhd8ftKdXcn3j/view?usp=drivesdk
+    version: '0.1'

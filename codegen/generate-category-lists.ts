@@ -66,6 +66,5 @@ function writeCategories(
  */
 export function generateCategoryLists(scripts: ComicRackScript[]): void {
 	const categories = groupScriptsByCategory(scripts);
-	console.log(categories);
 	writeCategories(categories);
 }

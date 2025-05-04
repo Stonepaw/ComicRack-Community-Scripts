@@ -1,0 +1,11 @@
+added: 2025-05-03T22:37:01Z
+author: Xelloss Nakama
+category: smart-lists
+name: First X in Each Y
+shortDescription: >-
+  Find the first (or last) comic/s in groups of comic grouped by Y and ordered
+  by X
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1SdIohG2Cczs-BmPXWmAHnjV1Na7mgDVr/view?usp=drivesdk
+    version: '0.5'

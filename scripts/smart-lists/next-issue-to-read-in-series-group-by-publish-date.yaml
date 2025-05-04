@@ -1,0 +1,12 @@
+added: 2025-05-03T22:37:01Z
+author: stuartp
+category: smart-lists
+name: Next Issue to Read in Series Group by Publish Date
+shortDescription: >-
+  List next books to read in series that you already started reading originally
+  published by pescuma with changes to use a SeriesGroup and sort by publishDate
+  by StuartP
+versions:
+  - url: >-
+      https://drive.google.com/file/d/12RGpm4ug3cldOHYns3lgMIdK05LD_cFL/view?usp=drivesdk
+    version: '0.2'

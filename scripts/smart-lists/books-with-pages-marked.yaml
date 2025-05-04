@@ -1,0 +1,11 @@
+added: '2025-05-03T21:47:40Z'
+author: Stonepaw
+category: smart-lists
+name: Books with pages marked
+shortDescription: >-
+  A smartlist script that pulls comics with any page marked what the user
+  specifies.
+versions:
+  - url: >-
+      https://drive.google.com/file/d/0ByXjKzTdCC9nQnBabjlqZm1yWUE/view?usp=sharing&resourcekey=0-pCqPgOcYnD2I2wlJbFYSyg
+    version: '1.1'

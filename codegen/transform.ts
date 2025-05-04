@@ -46,14 +46,16 @@ export function normalizeSchemaScript(
 	fileName: string
 ): ComicRackScript {
 	return {
-		...data,
-		id: fileName,
+		added: data.added,
 		author: ensureArray(data.author),
 		category: ensureArray(data.category),
-		links: data.links ?? [],
 		description: data.description != null ? convertMarkDown(data.description) : undefined,
-		// In the YAML we store the versions in order of oldest to newest, but we display them newest
-		// to oldest, so we reverse the order here.
+		id: fileName,
+		links: data.links ?? [],
+		name: data.name,
+		shortDescription: data.shortDescription,
+		// In the YAML we store the versions in order from oldest to newest, but we display them newest
+		// to oldest in the page, so we reverse the order here.
 		versions: data.versions.map(transformVersion).reverse()
 	};
 }
