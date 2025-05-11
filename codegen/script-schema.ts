@@ -22,6 +22,7 @@ export interface ComicRackScriptSchema {
 	description?: string | null;
 	links?: ComicRackScriptLinkSchema[] | null;
 	name: string;
+	recommended?: boolean;
 	shortDescription: string;
 	versions: ComicRackScriptVersionSchema[];
 }
@@ -104,6 +105,13 @@ export const COMIC_RACK_SCRIPT_SCHEMA: JSONSchemaType<ComicRackScriptSchema> = {
 		name: {
 			type: 'string',
 			description: 'The display name of the script'
+		},
+		recommended: {
+			type: 'boolean',
+			description:
+				'Whether the script is recommended for use and will show in the recommended section of the home page. Defaults to false.',
+			default: false,
+			nullable: true
 		},
 		shortDescription: {
 			type: 'string',

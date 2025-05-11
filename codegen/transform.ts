@@ -54,8 +54,9 @@ export function normalizeSchemaScript(
 		links: data.links ?? [],
 		name: data.name,
 		shortDescription: data.shortDescription,
-		// In the YAML we store the versions in order from oldest to newest, but we display them newest
-		// to oldest in the page, so we reverse the order here.
+		recommended: data.recommended ?? false,
+		// In the YAML we store the versions in order from oldest to newest, but we display newest
+		// to oldest on the page, so we reverse the order here.
 		versions: data.versions.map(transformVersion).reverse()
 	};
 }

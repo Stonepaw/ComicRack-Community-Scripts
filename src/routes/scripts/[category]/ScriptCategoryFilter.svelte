@@ -20,6 +20,18 @@
 				class={[
 					'mb-2 block rounded p-2',
 					{
+						'bg-primary/10': page === 'recommended',
+						'text-primary': page === 'recommended'
+					}
+				]}
+				href="{base}/scripts/recommended">Recommended</a
+			>
+		</li>
+		<li>
+			<a
+				class={[
+					'mb-2 block rounded p-2',
+					{
 						'bg-primary/10': page === 'all',
 						'text-primary': page === 'all'
 					}

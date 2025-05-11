@@ -6,7 +6,10 @@ import type { EntryGenerator, PageLoad } from './$types';
  * Generates a static but dynamically generated list of script categories.
  */
 export const entries: EntryGenerator = () => {
-	return Object.values(ComicRackScriptCategory).map((slug) => ({ category: slug }));
+	return [
+		...Object.values(ComicRackScriptCategory).map((slug) => ({ category: slug })),
+		{ category: 'recommended' }
+	];
 };
 
 export const prerender = true;

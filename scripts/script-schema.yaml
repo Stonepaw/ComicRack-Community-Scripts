@@ -79,6 +79,13 @@ properties:
   name:
     type: string
     description: The display name of the script
+  recommended:
+    type: boolean
+    description: >-
+      Whether the script is recommended for use and will show in the recommended
+      section of the home page. Defaults to false.
+    default: false
+    nullable: true
   shortDescription:
     type: string
     description: The short description of the script

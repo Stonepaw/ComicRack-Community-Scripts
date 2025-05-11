@@ -89,6 +89,11 @@ export interface ComicRackScript {
 	name: string;
 
 	/**
+	 * Whether the script is recommended and should show the Editors' Choice icon.
+	 */
+	recommended: boolean;
+
+	/**
 	 * The short description of the script to display in the list view.
 	 */
 	shortDescription: string;
@@ -102,7 +107,7 @@ export interface ComicRackScript {
 export interface ComicRackScriptListItem
 	extends Pick<
 		ComicRackScript,
-		'added' | 'author' | 'shortDescription' | 'name' | 'id' | 'category'
+		'added' | 'author' | 'shortDescription' | 'name' | 'id' | 'category' | 'recommended'
 	> {
 	version: Pick<ComicRackScriptVersion, 'date' | 'version'>;
 }
