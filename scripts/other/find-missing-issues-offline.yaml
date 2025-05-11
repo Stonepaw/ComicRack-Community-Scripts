@@ -1,0 +1,9 @@
+added: 2025-05-11T16:40:54Z
+author: Xelloss Nakama
+category: other
+name: Find Missing Issues Offline
+shortDescription: Find missing issues using an offline ComicVine comic list
+versions:
+  - url: >-
+      https://drive.google.com/file/d/13CxAqhOm3HKpsmtYQnuFZmosj_sDbT6y/view?usp=drivesdk
+    version: '2.7'

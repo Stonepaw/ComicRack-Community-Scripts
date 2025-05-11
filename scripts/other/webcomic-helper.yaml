@@ -1,0 +1,22 @@
+added: 2025-05-11T16:40:54Z
+author:
+  - Stonepaw
+  - Helmic
+category: other
+links:
+  - name: GitHub
+    url: https://github.com/Stonepaw/comicrack-webcomic-helper
+name: Webcomic Helper
+shortDescription: >-
+  Uses regex templates and various techniques to create a cbw for any webcomic
+description: |
+  Uses regex templates and various techniques to create a cbw for any webcomic
+
+  1.3RC2 was never officially released but was discovered in Stonepaw's archives.
+  He has no idea if it works
+versions:
+  - url: https://github.com/Stonepaw/comicrack-webcomic-helper/releases/tag/v1.3RC2
+    version: 1.3RC2
+    changes: Unknown. Stonepaw found this in his archives, but it was never released as a full version.
+  - url: https://github.com/Stonepaw/comicrack-webcomic-helper/releases/tag/1.2
+    version: '1.2'

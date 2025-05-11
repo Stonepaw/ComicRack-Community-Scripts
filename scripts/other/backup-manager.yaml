@@ -1,0 +1,18 @@
+added: 2025-05-11T16:40:54Z
+author:
+  - docdoom
+  - maforget
+category: other
+links:
+  - name: GitHub
+    url: https://github.com/maforget/cr-backup-manager
+  - name: Manual
+    url: >-
+      https://drive.google.com/file/d/1ZFOrZ5Kv98SDpRG-LV-1XIlQqptBWGv4/view?usp=drivesdk
+name: Backup Manager
+shortDescription: >-
+  Backs up your ComicRack library automatically. Updated to work with Community
+  Edition
+versions:
+  - url: https://github.com/maforget/cr-backup-manager/releases/tag/v1.3
+    version: '1.3'

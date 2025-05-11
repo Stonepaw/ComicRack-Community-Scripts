@@ -1,0 +1,12 @@
+added: 2025-05-11T16:40:54Z
+author: Stonepaw
+category: other
+links:
+  - name: GitHub
+    url: https://github.com/Stonepaw/comicrack-weekly-comic-releases
+name: Weekly Comic Releases
+shortDescription: Information on new comic releases for every week.
+versions:
+  - url: >-
+      https://github.com/Stonepaw/comicrack-weekly-comic-releases/releases/tag/v0.6.5
+    version: 0.6.5
