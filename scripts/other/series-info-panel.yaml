@@ -1,0 +1,14 @@
+added: 2025-05-11T16:40:54Z
+author:
+  - pescuma
+  - perezmu
+category: other
+links:
+  - name: GitHub
+    url: https://github.com/pescuma/comicrack-plugins/tree/master/SeriesInfoPanel
+name: Series Info Panel
+shortDescription: Show information about a selected series or issue
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1TwOqVRIgTeJBOJX5JjiKBNDGdlZhnwvX/view?usp=drivesdk
+    version: '0.13'

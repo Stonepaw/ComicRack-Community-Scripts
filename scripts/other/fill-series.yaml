@@ -1,0 +1,9 @@
+added: 2025-05-11T16:40:54Z
+author: Caliph
+category: other
+name: Fill Series
+shortDescription: Fill missing issues of a series with fileless comics
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1MpABUouq6gwc84IBsAaN9-Tfj1DAuDeS/view?usp=drivesdk
+    version: '0.3'

@@ -1,0 +1,12 @@
+added: 2025-05-11T16:40:54Z
+author: Stonepaw
+category: other
+links:
+  - name: GitHub
+    url: https://github.com/Stonepaw/comicrack-new-entry-via-barcode
+name: New Comic Entry Via Barcode
+shortDescription: Adds a new comic via a barcode. Queries Google Base for series names.
+versions:
+  - url: >-
+      https://github.com/Stonepaw/comicrack-new-entry-via-barcode/releases/tag/v0.1
+    version: '0.1'

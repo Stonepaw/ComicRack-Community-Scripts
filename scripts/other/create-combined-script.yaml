@@ -1,0 +1,12 @@
+added: 2025-05-11T16:40:54Z
+author: Stonepaw
+category: other
+links:
+  - name: GDrive
+    url: https://drive.google.com/drive/folders/1QBjE2XnNrnkvtURjiaiwhfFfXelpWRya
+name: Create Combined Script
+shortDescription: DISCOURAGED FROM USE. Creates a script that runs several scripts in sequence. This is discouraged from use as it modifies script files to add a new entry point.
+versions:
+  - url: >-
+      https://drive.google.com/file/d/0ByXjKzTdCC9nLUJKcndkWGpKZTA/view?usp=sharing&resourcekey=0-hwATXGQU8J9jtpHQy9a5LA
+    version: 0.1.3

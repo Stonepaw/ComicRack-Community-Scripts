@@ -1,0 +1,14 @@
+added: 2025-05-11T16:40:54Z
+author: maforget
+category: other
+links:
+  - name: GitHub
+    url: https://github.com/maforget/ComicRack_FindImageResolution/tree/v1.0
+name: Find Image Resolution for ComicRack
+shortDescription: >-
+  This plugin will check the resolution of the images inside a book and get the
+  value for the one that occurs the most.
+versions:
+  - url: >-
+      https://github.com/maforget/ComicRack_FindImageResolution/releases/tag/v1.0
+    version: '1.0'
