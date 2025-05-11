@@ -14,7 +14,14 @@
 
 <a href="{base}/script/{comicRackScript.id}" class="card-border card border-base-300 bg-base-100">
 	<div class="card-body">
-		<h3 class="text-xl font-bold">{comicRackScript.name}</h3>
+		<div class="flex items-center gap-3">
+			<h3 class="text-xl font-bold">{comicRackScript.name}</h3>
+			{#if comicRackScript.recommended}
+				<span class="material-symbols-outlined text-success" aria-label="Recommended">
+					editor_choice
+				</span>
+			{/if}
+		</div>
 		<div class="text-sm text-base-content/70">
 			<span>by </span>
 			<span>{comicRackScript.author.join(', ')}</span>

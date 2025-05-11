@@ -8,6 +8,7 @@ links:
     url: >-
       https://drive.google.com/drive/folders/1Y91gwXzbARAXwnHNwJHUpwujf7R_DrXq?usp=sharing
 name: Library Organizer
+recommended: true
 shortDescription: A rule and token based file organizer plugin for ComicRack
 versions:
   - url: >-

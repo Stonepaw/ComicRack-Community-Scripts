@@ -1,56 +1,72 @@
 import { mkdirSync, writeFileSync } from 'fs';
 import path from 'node:path';
 import { ComicRackScriptCategory } from '../src/lib';
-import {
-	type ComicRackScript,
-	type ComicRackScriptListItem
+import type {
+	ComicRackScript,
+	ComicRackScriptListItem
 } from '../src/lib/type/comic-rack-script.type';
 import { CATEGORIES_OUTPUT_DIR } from './paths';
 
+function createScriptListItem(script: ComicRackScript): ComicRackScriptListItem {
+	return {
+		added: script.added,
+		author: script.author,
+		category: script.category,
+		id: script.id,
+		name: script.name,
+		recommended: script.recommended,
+		shortDescription: script.shortDescription,
+		version: {
+			date: script.versions[0]?.date,
+			version: script.versions[0]?.version
+		}
+	};
+}
+
+type CategoriesWithAdditionalLists = ComicRackScriptCategory | 'all' | 'recommended';
+
+/**
+ * Groups scripts by category and returns a record of the scripts grouped by category.
+ */
 function groupScriptsByCategory(
 	scripts: ComicRackScript[]
-): Record<ComicRackScriptCategory | 'all', ComicRackScriptListItem[]> {
-	const categories: Record<ComicRackScriptCategory, ComicRackScriptListItem[]> = Object.fromEntries(
-		Object.values(ComicRackScriptCategory).map(
-			(category): [ComicRackScriptCategory, ComicRackScriptListItem[]] => {
-				return [category, []];
-			}
-		)
-	) as Record<ComicRackScriptCategory, ComicRackScriptListItem[]>;
-
-	const all: ComicRackScriptListItem[] = [];
+): Record<CategoriesWithAdditionalLists, ComicRackScriptListItem[]> {
+	const categories: Record<CategoriesWithAdditionalLists, ComicRackScriptListItem[]> = {
+		[ComicRackScriptCategory.fileManagement]: [],
+		[ComicRackScriptCategory.metadata]: [],
+		[ComicRackScriptCategory.other]: [],
+		[ComicRackScriptCategory.scrapers]: [],
+		[ComicRackScriptCategory.smartLists]: [],
+		all: [],
+		recommended: []
+	};
 
 	for (const script of scripts) {
-		const listItem: ComicRackScriptListItem = {
-			added: script.added,
-			author: script.author,
-			shortDescription: script.shortDescription,
-			name: script.name,
-			id: script.id,
-			category: script.category,
-			version: {
-				date: script.versions[0]?.date,
-				version: script.versions[0]?.version
-			}
-		};
+		const listItem: ComicRackScriptListItem = createScriptListItem(script);
 
 		for (const category of script.category) {
 			categories[category].push(listItem);
 		}
-		all.push(listItem);
+		categories.all.push(listItem);
+
+		if (script.recommended) {
+			categories.recommended.push(listItem);
+		}
 	}
 
 	// Sort scripts by name within each category
-	for (const category of Object.values(ComicRackScriptCategory)) {
-		categories[category].sort((a, b) => a.name.localeCompare(b.name));
+	for (const key of Object.keys(categories)) {
+		categories[key as CategoriesWithAdditionalLists].sort((a, b) => a.name.localeCompare(b.name));
 	}
-	all.sort((a, b) => a.name.localeCompare(b.name));
 
-	return { ...categories, all };
+	return categories;
 }
 
+/**
+ * Writes categorized scripts data to JSON files in the specified output directory.
+ */
 function writeCategories(
-	categories: Record<ComicRackScriptCategory | 'all', ComicRackScriptListItem[]>
+	categories: Record<CategoriesWithAdditionalLists, ComicRackScriptListItem[]>
 ): void {
 	mkdirSync(path.join(CATEGORIES_OUTPUT_DIR), { recursive: true });
 

@@ -9,6 +9,7 @@ links:
   - name: ComicRack Manual
     url: https://drive.google.com/open?id=13VDrSKDXrSqsbXISzAXx6mNjpxJatagY
 name: Comic Vine Scraper
+recommended: true
 shortDescription: Scrapes data from the extensive ComicVine database
 versions:
   - url: https://bit.ly/cvs10102

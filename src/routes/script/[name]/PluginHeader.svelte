@@ -5,7 +5,15 @@
 </script>
 
 <section>
-	<h1 class="text-2xl font-bold">{comicRackScript.name}</h1>
+	<div class="flex items-center gap-3">
+		<h1 class="text-2xl font-bold">{comicRackScript.name}</h1>
+
+		{#if comicRackScript.recommended}
+			<span class="material-symbols-outlined text-success" aria-label="Recommended">
+				editor_choice
+			</span>
+		{/if}
+	</div>
 	<div class="mt-2 text-sm text-base-content/70">
 		<span>by {comicRackScript.author.join(', ')}</span>
 	</div>
