@@ -1,0 +1,9 @@
+added: 2025-05-11T16:29:22Z
+author: Xelloss Nakama
+category: file-management
+name: Change File Link
+shortDescription: Update the comic file link
+versions:
+  - url: >-
+      https://drive.google.com/file/d/15FqqT4WfcNS6nxDOM2rXwwGy5dTBj6HB/view?usp=drivesdk
+    version: '0.1'

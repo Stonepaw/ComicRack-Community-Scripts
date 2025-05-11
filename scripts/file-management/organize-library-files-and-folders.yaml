@@ -1,0 +1,12 @@
+added: 2025-05-11T16:29:22Z
+author: Devin Cooper aka SoundWave
+category: file-management
+name: Organize Library Files & Folders
+shortDescription: >-
+  Standardizes naming structure of library folders and eComic files.
+
+  Library Organizer is preferred as it is more configurable. However, this script is simpler.
+versions:
+  - url: >-
+      https://drive.google.com/file/d/0ByXjKzTdCC9nS2hPdWx0akpYTlE/view?usp=sharing&resourcekey=0-vyB5aixq9pvQPRaOnA0vJA
+    version: 2.2.1

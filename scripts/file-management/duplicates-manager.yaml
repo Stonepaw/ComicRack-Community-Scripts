@@ -1,0 +1,18 @@
+added: 2025-05-11T16:29:22Z
+author:
+  - Perezmu
+  - Pescuma
+category: file-management
+links:
+  - name: GitHub
+    url: https://github.com/pescuma/comicrack-duplicates-manager
+  - name: GitHub Wiki
+    url: https://github.com/pescuma/comicrack-duplicates-manager/wiki
+name: Duplicates Manager
+shortDescription: >-
+  A manager to sort and remove duplicate eComics from the library according to
+  given rules
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1kVL9EFDXABsMlHZmGhjvQ6a-n2j4zZoi/view?usp=drivesdk
+    version: '0.9'
