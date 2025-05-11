@@ -1,0 +1,11 @@
+added: 2025-05-11T16:29:22Z
+author: Stonepaw
+category: file-management
+name: Convert to Fileless
+shortDescription: >-
+  Converts a batch of comics to fileless entries while keeping info and
+  thumbnails
+versions:
+  - url: >-
+      https://drive.google.com/file/d/0ByXjKzTdCC9nSEJ3d2I1STRkMXM/view?usp=sharing&resourcekey=0-MVXt9RBCKMq0oEAJVcbaXg
+    version: '1'

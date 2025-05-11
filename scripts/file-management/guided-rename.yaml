@@ -1,0 +1,14 @@
+added: 2025-05-11T16:29:22Z
+author: wadegiles
+category: file-management
+name: Guided Rename
+shortDescription: >-
+  Provides a GUI to easily create a pattern for renaming files based on comic
+  information. Renames files only and does not create directories.
+
+  Library Organizer is preferred as it is more configurable. However, this script is
+  simpler.
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1g26RAHo3_W2Qbd4mDxCRhXTepC_gaLnl/view?usp=drivesdk
+    version: 1.7 (missing), 1.6

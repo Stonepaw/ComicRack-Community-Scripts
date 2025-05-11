@@ -1,0 +1,12 @@
+added: 2025-05-11T16:29:22Z
+author: Stonepaw
+category: file-management
+links:
+  - name: GDrive
+    url: https://drive.google.com/drive/folders/1MNYmuKf0-3zrVpPbSKkalQfZlIkpocYg
+name: Move Files
+shortDescription: Move files from within ComicRack
+versions:
+  - url: >-
+      https://drive.google.com/file/d/1dwWV4MrpAmCInvQZvn2H1fELOcYh2ctZ/view?usp=drivesdk
+    version: '1.5'
